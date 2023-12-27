@@ -68,31 +68,31 @@ const GalleryChanger: React.FC<ImageGridProps> = ({ images }) => {
                 
        <div className=" relative border  mx-auto h-[90vh] w-[90vw]  ">
        <div className="h-screen border-red-600 grid grid-cols-1 gap-8 lg:gap-4">
-                  <div className="rounded w-full min-h-[70vh]   ">
+                  <div className="rounded w-full mx-auto min-h-[70vh]   ">
                         
                                    {images.slice(0, 1).map((image, index) => (
-                         <div key={index} className="grid grid-cols-2 gap-16 lg:gap-2">
+                         <div key={index} className="w-[80vw] pl-24 pt-8 mx-auto grid grid-cols-2 gap-16  lg:gap-2">
                              <button
                               onClick={() => handleButtonClick(0)}
-                                className="w-full h-full  bg-red-700 text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-red-200 to-slate-500 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
+                                className="w-8/12 h-full  bg-red-700 text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-slate-200 to-blue-500 border border-transparent transform hover:scale-100 hover:border-white transition-transform duration-100 ease-in-out"
                               >
                                 DashBoard 
                               </button>
                              <button
                                 onClick={() => handleButtonClick(1)}
-                                className="bg-white  w-full h-full text-black font-bold py-2 px-4 rounded-full bg-gradient-to-r from-red-200 to-slate-500 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
+                                className="bg-white  w-8/12 h-full text-black font-bold py-2 px-4 rounded-full bg-gradient-to-r from-slate-200 to-blue-500  border border-transparent transform hover:scale-100 hover:border-white transition-transform duration-3000 ease-in-out"
                               >
                                Facility 
                              </button>
                              <button
                                onClick={() => handleButtonClick(2)}
-                               className="w-full h-full bg-black text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-red-200 to-slate-500 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
+                               className="w-8/12 h-full bg-black text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-slate-200 to-blue-500 border border-transparent transform hover:scale-100 hover:border-white transition-transform duration-3000 ease-in-out"
                            >
                                 Billing 
                               </button>
                              <button
                                onClick={() => handleButtonClick(2)}
-                               className="w-full h-full bg-black text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-red-200 to-slate-500 border border-transparent transform hover:scale-110 hover:border-white transition-transform duration-3000 ease-in-out"
+                               className="w-8/12 h-full bg-black text-white font-bold py-2 px-4 rounded-full bg-gradient-to-r from-slate-200 to-blue-500 border border-transparent transform hover:scale-100 hover:border-white transition-transform duration-3000 ease-in-out"
                            >
                                 Billing 
                               </button>

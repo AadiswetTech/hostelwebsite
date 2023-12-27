@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
                   {label:"Home",link:"/"},
                   {label:"About",link:"/About"},
                   {label:"Contact",link:"/"},
-                  {label:"Pricing",link:"/pricing"},
+                  {label:"Pricing",link:"/Pricing"},
 ]
   return (
     <nav className="flex bg-white sticky top-0 justify-between  items-center px-8 py-6">

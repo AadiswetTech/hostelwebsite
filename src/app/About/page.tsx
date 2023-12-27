@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Image from 'next/image'
 // import {ImgSlider} from '@/Component/ImgSlider'
 // import {Card} from "@/Component/Card"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,6 +11,8 @@ config.autoAddCss = false
 
 import {  faGear,faLayerGroup,faPhone} from '@fortawesome/free-solid-svg-icons';
 import GalleryChanger from "@/app/components/GalleryChanger"
+import Services from '@/ServiceComponents/Services'
+import { ImgSlider } from '@/ServiceComponents/ImgSlider'
 // import Camp from '@/Component/Camp'
 
 const cardData=[
@@ -26,7 +29,73 @@ const imageUrls = [
 const page = (props:Props) => {
   return (
          <>
-    <section>
+         <div className="bg-white mb-6">
+         <div className="bg-gradient-to-r from-slate-200 to-sky-800 w-[95vw] mx-auto border h-auto mt-12 rounded-2xl">
+<div className='grid grid-cols-1 lg:grid-cols-2 h-full'>
+  <div className=" mx-auto my-5 flex flex-col justify-around align-sub text-start w-8/12 text-red-900 px-6">
+    <h1 className='text-4xl text-blue-900 font-bold pr-8  '>Predictable Growth start here</h1>
+    <p className="text-lg font-medium text-slate-900">Hostello give you full context on everyr company in your target maket so you can reachand convert more customer</p>
+    <button className='bg-blue-900  text-xl align-start h-12 text-slate-50 rounded-md justify-start w-48'>Get started</button>
+  </div>
+  <div className=" pr-0 mx-auto my-[70px] bg-black">
+    <Image src="/hero.png" className='pl-8' width={400} height={200} alt={''}/>
+  </div>
+
+</div>
+  </div>
+         </div>
+{/* feature */}
+         <div className="mt-5">
+          <div className="w-[90vw] mx-auto bg-white rounded-lg h-auto">
+            <h2 className="text-center font-semibold">hostello is serving 20+ hostel property right now</h2>
+            <div className="rounded-xl flex flex-row gap-10 justify-around flex-wrap ">
+              <Image src="/logo3.png" width={100} height={20} alt={''}/>
+              <Image src="/logo1.png" width={100} height={20} alt={''}/>
+              <Image src="/logo2.png" width={100} height={20} alt={''}/>
+              <Image src="/logo3.png" width={100} height={20} alt={''}/>
+              <Image src="/logo4.png" width={100} height={20} alt={''}/>
+            </div>
+    
+          </div>
+         </div>
+
+        {/* //statics */}
+
+        <div className="mt-8">
+          <div className="w-[95vw] mx-auto border rounded min-h-[60vh] bg-white">
+<div className="flex flex-col gap-6 justify-around mt-12 w-5/6 mx-auto">
+  <div className=" flex justify-start w-[30vw] mx-auto ">
+    <h1 className="text-4xl font-semibold">Turn Data Into better Buisness now</h1>
+  </div>
+  <div className="bg-white">
+    <p className='text-lg font-thin'>Enhance functioning of your hostel & track hostel activities in real-time with our hostel student management system software</p>
+  </div>
+  <div className=" grid grid-cols-3 divide-y lg:divide-x">
+    <div className="flex flex-col text-center">
+      <span className='text-blue-600 text-4xl font-semibold'>249 %</span>
+      <h2 className="text-xl"> increase in new customer</h2>
+    </div>
+    <div className="flex flex-col text-center">
+    <span className='text-blue-600 text-4xl font-semibold'>249 %</span>
+    <h2 className="text-xl"> increase in new customer</h2>
+    </div>
+    <div className="flex flex-col text-center ">
+    <span className='text-blue-600 text-4xl font-semibold'>60 %</span>
+    <h2 className="text-xl">decrease in management cost </h2>
+    </div>
+  </div>
+  <div className="flex justify-center">
+  <button className='bg-blue-900 mx-auto text-xl  h-12 text-slate-50 rounded-md justify-center w-48'>Get started</button>
+  </div>
+</div>
+          </div>
+        </div>
+         {/* feature end */}
+
+      <>
+        <ImgSlider/>
+        </>  
+    {/* <section>
     <div className="h-full min-h-[80vh] w-[95vw] mx-auto bg-gray-800 pt-12 p-4">
   <div className="bg-white grid gap-14 md:grid-cols-3 md:gap-5">
     <div className="rounded-xl bg-white p-6 text-center shadow-xl">
@@ -107,7 +176,7 @@ const page = (props:Props) => {
   </div>
 
 </div>  
-    </section>
+    </section> */}
     <section className='mt-5'>
     <GalleryChanger images={imageUrls}/>
 
@@ -134,7 +203,7 @@ const page = (props:Props) => {
          {/* <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-8.svg"/> */}
    </section>
   
-   <section className="mt-8 mb-10 ">
+   {/* <section className="mt-8 mb-10 ">
     <h2 className="mb-12 text-center text-3xl font-bold">
       Why is it so great?
     </h2>
@@ -254,7 +323,7 @@ const page = (props:Props) => {
         </div>
       </div>
     </div>
-  </section>
+  </section> */}
   
 
     </>

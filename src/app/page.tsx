@@ -2,7 +2,7 @@
 "use client";
 
 import React from "react";
-
+import Image from "next/image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
@@ -58,30 +58,85 @@ export default function Home() {
           <div className="text-[15px] md:text-[40px] md:p-[20px] text-blue-700">
             
             <button className="bg-[#3b3686] dark:bg-gray-800 rounded-xl text-white dark:text-gray-300 font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-orange-500 dark:hover:bg-gray-600 transition">Get Started</button>
-            {/* <Typed
-              strings={[
-                "Analytics",
-                "Management",
-                "Staff management",
-                "Room Management",
-              ]}
-              typeSpeed={70}
-             
-              loop={true}
-            /> */}
+           
           </div>
          
         </div>
         <div className="  basis-[45%] ">
           <div className="bg-slate-50  ">
-            <img
-              src="hero.png"
+            {/* <Image 
+              src="./hero.png"
               className="py-[10vh]  h-[70vh] rounded-sm bg-white  w-full lg:w-full lg:mx-auto "
-              alt="Hostel Image"
-            />
+              alt="Hostel Image" width="200" height="200"
+            /> */}
           </div>
         </div>
       </section>
+      <section className="mt-5 flex flex-col gap-12" >
+        <div className="w-[95vw] h-auto mx-auto border">
+
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-5 lg:gap-4 ">
+            <div className="flex flex-col justify-start gap-4  px-12">
+              <span className="text-blue-700 font-semibold">SMART HMS FEATURES</span>
+              <h1 className="text-4xl font-bold text-slate-900">A Hostel Pos made for all your needs</h1>
+              <p className="font-thin text-xl text-slate-500">A quick and easy to use hostel billing softare that make managing high order volume smooth</p>
+            </div>
+            <div className="flex flex-col gap-3 lg:flex-row">
+
+              <img src="/Dashboard.png" className="w-[90vw] h-[60vh] lg:w-[55vw] lg:h-[60vh]" />
+              <div className="flex flex-col py-12  px-7 gap-4">
+                <h2 className=" font-bold text-gray-800 text-4xl">Minimal And Useful Dashboard</h2>
+                <p className="text-xl  text-slate-700 font-light">Get Analytics of active Occupants,Empty and filled beds,
+                generated bills, and payment Collected on a single dashboard
+</p>
+                <button className="justify-start bg-cyan-700 text-white mx-auto w-8/12 rounded-md font-semibold text-lg">Explore </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-[95vw] h-auto mx-auto border">
+
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-5 lg:gap-4 ">
+            <div className="flex flex-col justify-start gap-4  px-12">
+              
+             
+            </div>
+            <div className="flex flex-col gap-3 lg:flex-row">
+
+              <img src="/Bill.png" className="w-[90vw] h-[60vh] lg:w-[55vw] lg:h-[60vh]" />
+              <div className="flex flex-col py-12  px-7 gap-4">
+                <h2 className=" font-bold text-gray-800 text-4xl">Manage your Bill and Payment Smoothly</h2>
+                <p className="text-xl  text-slate-700 font-light">Get Analytics of active Occupants,Empty and filled beds,
+                generated bills, and payment Collected on a single dashboard
+</p>
+                <button className="justify-start bg-cyan-700 font-semibold text-lg text-white mx-auto w-8/12 rounded-md">Explore  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='mt-10 flex flex-col gap-3'>
+         <h1 className='text-center font-bold text-3xl text-gray-800 w-full '>Feature that assist your Hosetel daily operations</h1>
+         <div className="px-10 h-auto grid grid-cols-1 gap-4  lg:grid-cols-2">
+                  <div className=" w-full ">
+                
+                  <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-8.svg" className='py-2'/> 
+                  </div>
+                  <div className="   flex flex-col gap-2 ">
+                           <div className=" pt-16 font-serif flex flex-col px-10 gap-3 justify-center ">
+                           <h1 className="text-center text-3xl text-gray-800 font-semibold">Hostel Room Allocation System</h1>
+
+          
+                           <p className="text-xl  text-slate-700 font-light">1.Improve guest satisfaction by proactively assigning rooms digitally.</p>
+                           <p className="text-xl  text-slate-700 font-light">2.Assign rooms trailored precisely to guest preferences, budget, and the number of available rooms in your hostel all before they arrive.</p>
+                      </div>  
+                          
+                  </div>
+         </div>
+         {/* <img src="https://s3.us-west-2.amazonaws.com/www.bookingninjas.com/img/illustration-8.svg"/> */}
+   </section>
 
       {/* <section className="w-full min-h-[90vh] bg-slate-50 mt-0"> */}
       {/* <div class="w-full md:mx-auto bg-indigo-500 md:h-[50vh] sm:bg-orange-100 rounded-xl shadow-md overflow-hidden md:w-full">
@@ -117,7 +172,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="">
+      {/* <section className="">
         <div className="border border-red-500 h-60 mx-auto w-full text-center ">
           <h1 className="font-bold text-center text-3xl">Hostello Key feature </h1>
           <div className="bg-red-200 px-8 py-3 grid grid-cols-2 h-48  rounded-lg gap-3">
@@ -136,8 +191,8 @@ export default function Home() {
            
           </div>
         </div>
-      </section>
-      <section className="bg-white  py-24 px-4 lg:px-16"> 
+      </section> */}
+      {/* <section className="bg-white  py-24 px-4 lg:px-16"> 
     <div className="container mx-auto px-[12px] md:px-24 xl:px-12 max-w-[1300px] nanum2">
         <h1 className="text-center text-5xl pb-12">Industries we serve</h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-28 lg:gap-y-16">
@@ -146,7 +201,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[#3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Automotive.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Automotive.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Automotive" title="Automotive" loading="lazy"
                                 width="200" height="200"/>
                         </div>
@@ -165,7 +220,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[#3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Toys-and-Baby-Products.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Toys-and-Baby-Products.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Toys and Baby Products"
                                 title="Toys and Baby Products" loading="lazy" width="200" height="200"/>
                         </div>
@@ -186,7 +241,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[#3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Glass.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Glass.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Glass" title="Glass" loading="lazy" width="200"
                                 height="200"/>
                         </div>
@@ -206,7 +261,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Jewelry-coins-and-medallions.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Jewelry-coins-and-medallions.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Jewelry Coins and Medallions"
                                 title="Jewelry Coins and Medallions" loading="lazy" width="200" height="200"/>
                         </div>
@@ -219,15 +274,6 @@ export default function Home() {
                     </div>
                 </a>
             </div>
-
- 
-
-           
-
-           
-
-           
-
           
 
             <div className="relative group h-48 flex   flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
@@ -235,7 +281,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-10  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[#3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Cosmetics.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Cosmetics.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Cosmetics" title="Cosmetics" loading="lazy"
                                 width="200" height="200"/>
                         </div>
@@ -258,7 +304,7 @@ export default function Home() {
                     <div className="h-28">
                         <div
                             className="absolute -top-20 lg:top-[-10%] left-[5%] z-40  group-hover:top-[-30%] group-hover:opacity-[0.9]   duration-300 w-[90%] h-48 bg-[#3B3486] rounded-xl justify-items-center align-middle">
-                            <img src="https://epicpadprinting.com/public/img/indus/Sports.png"
+                            <Image src="https://epicpadprinting.com/public/img/indus/Sports.png"
                                 className="w-36 h-36  mt-6 m-auto" alt="Sports" title="Sports" loading="lazy" width="200"
                                 height="200"/>
                         </div>
@@ -278,15 +324,15 @@ export default function Home() {
 
         </div>
     </div>
-</section>
+</section> */}
       <section className="bg-slat-50 mt-5">
         <div className=""></div>
         <div className="container py-10 grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-          <img
+          {/* <Image
             src="https://www.petpooja.com/assets/images/pos/Quick-simple_md.webp"
-            alt=""
+            alt="" width={300} height={400}
             className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square"
-          />
+          /> */}
           <div className=" width-[40%] gap-7 flex flex-col justify-center">
             <FontAwesomeIcon
               className="dark:bg-gray-500 aspect-square"
@@ -378,7 +424,7 @@ export default function Home() {
             <div className="mb-5">
               <label
                 htmlFor="date"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                className="mb-3 block text-base font-medium text-[#07074D]"
               >
                 Date
               </label>
